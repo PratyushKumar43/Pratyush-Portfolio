@@ -1,5 +1,7 @@
 import { Github, Twitter, Linkedin, Globe, BookOpen, Video, MessageSquare, Briefcase, Mail, MapPin } from 'lucide-react';
 
+const BASE = import.meta.env.BASE_URL;
+
 export const profile = {
   name: "Pratyush Kumar Behera",
   username: "PratyushKumar43",
@@ -8,7 +10,7 @@ export const profile = {
   email: "pratyushkumaressential@gmail.com",
   status: "Job Hunting",
   openToWork: true,
-  avatar: "/me.jpg",
+  avatar: `${BASE}me.jpg`,
 };
 
 export const stats = [
@@ -154,17 +156,17 @@ export const projectTagIcons: Record<string, string> = {
   GitHub: `${CDN}/github/github-original.svg`,
   Vercel: `${CDN}/vercel/vercel-original.svg`,
   "Vercel AI SDK": `${CDN}/vercel/vercel-original.svg`,
-  Gemini: "/icons/gemini.svg",
-  "Google-Gemini": "/icons/gemini.svg",
-  "Gemini 2.5 Flash": "/icons/gemini.svg",
-  LangGraph: "/icons/langgraph.svg",
-  Qdrant: "/icons/qdrant.svg",
-  shadcn: "/icons/shadcn.svg",
-  Cursor: "/icons/cursor.svg",
-  "Claude Code": "/icons/claude-code.svg",
-  Opencode: "/icons/opencode.svg",
-  Pydantic: "/icons/pydantic.svg",
-  OpenRouter: "/icons/openrouter.svg",
+  Gemini: `${BASE}icons/gemini.svg`,
+  "Google-Gemini": `${BASE}icons/gemini.svg`,
+  "Gemini 2.5 Flash": `${BASE}icons/gemini.svg`,
+  LangGraph: `${BASE}icons/langgraph.svg`,
+  Qdrant: `${BASE}icons/qdrant.svg`,
+  shadcn: `${BASE}icons/shadcn.svg`,
+  Cursor: `${BASE}icons/cursor.svg`,
+  "Claude Code": `${BASE}icons/claude-code.svg`,
+  Opencode: `${BASE}icons/opencode.svg`,
+  Pydantic: `${BASE}icons/pydantic.svg`,
+  OpenRouter: `${BASE}icons/openrouter.svg`,
 }
 
 export const skills = [
@@ -193,8 +195,8 @@ export const skills = [
       { name: "FastAPI", icon: `${CDN}/fastapi/fastapi-original.svg` },
       { name: "Express", icon: `${CDN}/express/express-original.svg` },
       { name: "REST APIs" },
-      { name: "LangChain", icon: "/icons/langchain.svg" },
-      { name: "LangGraph", icon: "/icons/langgraph.svg" },
+      { name: "LangChain", icon: `${BASE}icons/langchain.svg` },
+      { name: "LangGraph", icon: `${BASE}icons/langgraph.svg` },
       { name: "Redis", icon: `${CDN}/redis/redis-original.svg` },
     ]
   },
@@ -204,7 +206,7 @@ export const skills = [
       { name: "MongoDB", icon: `${CDN}/mongodb/mongodb-original.svg` },
       { name: "MySQL", icon: `${CDN}/mysql/mysql-original.svg` },
       { name: "NeonDB" },
-      { name: "Pinecone", icon: "/icons/qdrant.svg" },
+      { name: "Pinecone", icon: `${BASE}icons/qdrant.svg` },
       { name: "Prisma", icon: `${CDN}/prisma/prisma-original.svg` },
     ]
   },
@@ -219,7 +221,7 @@ export const skills = [
       { name: "LLM Pipelines" },
       { name: "RAG" },
       { name: "MLOps" },
-      { name: "Gemini API", icon: "/icons/gemini.svg" },
+      { name: "Gemini API", icon: `${BASE}icons/gemini.svg` },
     ]
   },
   {
