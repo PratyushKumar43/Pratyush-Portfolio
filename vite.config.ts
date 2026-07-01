@@ -8,6 +8,7 @@ import remarkFrontmatter from 'remark-frontmatter';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
+    base: '/Pratyush-Portfolio/',
     plugins: [
       mdx({remarkPlugins: [remarkFrontmatter], providerImportSource: '@mdx-js/react'}),
       react(),
