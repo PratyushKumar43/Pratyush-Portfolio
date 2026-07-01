@@ -22,7 +22,8 @@ interface AnimConfig {
   fps: number
 }
 
-const BASE = '/owlet_monster/Owlet_Monster'
+const BASE_PATH = import.meta.env.BASE_URL;
+const BASE = `${BASE_PATH}owlet_monster/Owlet_Monster`
 
 const ANIMS: Record<State, AnimConfig> = {
   idle: { sheet: `${BASE}_Idle_4.png`, frames: 4, fps: 4 },
@@ -33,7 +34,7 @@ const ANIMS: Record<State, AnimConfig> = {
   death: { sheet: `${BASE}_Death_8.png`, frames: 8, fps: 10 },
 }
 
-const DUST_SHEET = '/owlet_monster/Walk_Run_Push_Dust_6.png'
+const DUST_SHEET = `${BASE_PATH}owlet_monster/Walk_Run_Push_Dust_6.png`
 const DUST_FRAMES = 6
 const DUST_FPS = 10
 
